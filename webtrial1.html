@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>sticky navbar | vanilla javascript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body text="white">
+  <header>
+    <a href="#" class="logo">ENQUEEN INTERNET</a>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="tel:+254748228155">Contact</a></li>
+      <li><a href="https://www.instagram.com/invites/contact/?i=1o1wtez4cbdxp&utm_content=d7b8kqq" target="_blank">Support</a></li>
+      <li><a href="#">Social</a></li>
+      <li><button class="sign-in-btn">Sign In</button></li>
+      <li><button class="login-btn">Login</button></li>
+    </ul>
+  </header>
+  <p class="info">Enqueen Internet is a private corporate, dedicated to providing good, quality internet at affordable 
+      prices for students and interns.</p>
+  <p class="info">Our plans and pricings are as follows:</p>
+  <table id="plans">
+    <tr>
+      <th>BRONZE</th>
+      <th>SILVER</th>
+      <th>GOLD</th>
+    </tr>
+    <tr>
+      <th>1 Device Maximum</th>
+      <th>3 Devices Maximum</th>
+      <th>5 Devices Maximum</th>
+    </tr>
+    <tr>
+      <th>Public Hotspot</th>
+      <th>Personal Router</th>
+      <th>Personal Router</th>
+    </tr>
+    <tr>
+      <th>Speeds upto 20mbps</th>
+      <th>5 mbps</th>
+      <th>8 mbps</th>
+    </tr>
+    <tr>
+      <th>Ksh 1500/=</th>
+      <th>Ksh 2500/=</th>
+      <th>Ksh 3500/=</th>
+    </tr>
+  </table>
+  <section class="banner"></section>
+  <script type="text/javascript">
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+  </script>
+</body>
+</html>

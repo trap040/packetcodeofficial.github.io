@@ -1,0 +1,132 @@
+*
+{margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Times New Roman', Times, serif;
+}
+body{
+    min-height: 200vh;
+    background: rgb(0, 0, 0);
+    background-image: url(plan.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+  
+  }
+
+header
+{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 100000;
+  
+}
+header.sticky{
+  padding: 5px 100px;
+  background: rgb(255, 254, 254);
+}
+header .logo
+{
+  position: relative;
+  font-weight: 700;
+  color:rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+header ul
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li
+{
+  position: relative;
+  list-style: none;
+}
+header ul li a
+{
+position: relative;
+margin: 0 15px;
+text-decoration: none;
+color:rgb(255, 255, 255);
+letter-spacing: 2px;
+font-weight: 500px;
+transition: 0.6s;
+}
+.banner
+{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  background-size: cover;
+  
+}
+header.sticky .logo,
+header.sticky ul li a
+{
+  color: #000;
+}
+body {
+  position: top;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  padding: 0px;
+}
+.info {
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: unset;
+  margin-top: 100px;
+  font-size: 20px;
+}
+#plans {
+  width: 80%;
+  margin: 120px;
+  border-collapse: collapse;
+  margin-top: 100px;
+}
+
+#plans th, #plans td {
+  border: 1px solid #fff;
+  padding: 10px;
+  text-align: center;
+  bottom: 8px;
+  position: bottom;
+}
+
+#plans th {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+.sign-in-btn, .login-btn {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 2px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.sign-in-btn:hover, .login-btn:hover {
+  background-color: #2980b9;
+}
+
